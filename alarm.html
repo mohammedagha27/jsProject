@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm</title>
+    <link rel="stylesheet" href="alarm.css" />
+  </head>
+  <body>
+    <div class="current-time-container">
+      <div class="clock">
+        <div class="container">
+          <h2 id="hour">00</h2>
+          <h2 id="dot">:</h2>
+          <h2 id="minute">00</h2>
+          <h2 id="dot">:</h2>
+          <h2 id="seconds">00</h2>
+          <span id="ampm"></span>
+        </div>
+      </div>
+    </div>
+    <div class="new-alarm-container">
+      <form action="">
+        <select name="hour" id="hour-select"></select>
+        <select name="minute" id="minute-select"></select>
+        <select name="am-pm" id="am-pm-select">
+          <option value="am">am</option>
+          <option value="pm">pm</option>
+        </select>
+        <button id="form-btn">Add Alarm</button>
+      </form>
+    </div>
+    <section class="alarm">
+      <div class="container">
+          <h1>Current Alarms :</h1>
+      </div>
+    </section>
+    <audio src="clock-sound.mp3" controls ></audio>
+    <script src="alarm.js"></script>
+  </body>
+</html>

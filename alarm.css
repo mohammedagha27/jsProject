@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+  }
+  
+  body {
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(135deg, #2e266e 0%,#7b2189 100%);  }
+  .clock {
+    position: relative;
+    width: 600px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .clock .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .clock .container h2 {
+    font-size: 70px;
+    color: #fff;
+  }
+  
+  .clock .container h2:nth-child(odd) {
+    padding: 5px 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+     }
+  
+  .clock .container h2#seconds {
+    color: #00ffff;
+  }
+  
+  #ampm {
+    position: relative;
+    top: -50px;
+    font-size: 2em;
+    color: #00ffff;
+    font-weight: 700;
+  }
+  .new-alarm-container{
+    width: 600px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .new-alarm-container form{
+      /* background-color: #f9d924; */
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      height: 100%;
+      width: 80%;
+      position: relative;
+      padding: 10px 0;
+  }
+  .new-alarm-container form select  {
+    font-size: 40px;
+    outline: none;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    color: #000
+}
+  .new-alarm-container form #form-btn  {
+    padding: 10px 25px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    background-color: #2e266e;
+    color: #fff;
+    font-size: 25px;
+    transition: all .4s ease;
+}
+  .new-alarm-container form #form-btn:hover  {
+    transform: scale(.95);
+    background-color: #382d91;
+}
+section.alarm {
+    width: 600px;
+    min-height: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+section.alarm .container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    padding: 10px;
+}
+section.alarm .container h1{
+    margin: 0 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    border: 1px solid rgba(238, 238, 238, 0.332);
+    border-radius: 10px;
+    padding: 5px;
+}
+.current-alarm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #fff;
+    
+}
+.current-alarm.active{
+  color: red;
+   }
+section.alarm .container h2 {
+    font-size: 25px;
+    
+  }
+  
+  section.alarm h2:nth-child(odd) {
+    padding: 5px 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+     }
